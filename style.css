@@ -19,7 +19,7 @@ body {
 
 input, textarea {
 display: block; margin: 5px 0; padding: 5px;
-border: 4px solid #4471ff;
+}
 
 button {
 	border: 0;
