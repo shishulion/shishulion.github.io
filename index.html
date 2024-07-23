@@ -58,7 +58,14 @@
             document. getElementById("user_id").value =tg.initDataUnsafe.user.id;
         });
 
-        order.addEventListener("click", () => {
+        order.addEventListener("click", () => {	
+	let name = document.getElementById ("user_name").value;
+
+	let data = {
+	name: name
+	}
+	tg.sendData(JSON.stringify(data));
+	
             tg.close();
         });
 
