@@ -6,6 +6,7 @@
 <title>Shop</title>
 </head>
 <body>
+<span id="platform"></span>
     <table width=100% height=100%  border="1">
       <tbody>
         <tr>
@@ -50,6 +51,7 @@
         let order = document.getElementById("order");
 	tg.expand();
 
+	document.getElementById('platform').innerHTML = Telegram.WebApp.platform;
 	    
         buy. addEventListener("click", () => {
             document.getElementById("main").style.display = "none";
